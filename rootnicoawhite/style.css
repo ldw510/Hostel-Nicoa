@@ -1,0 +1,688 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+* {
+    text-decoration: none;
+}
+
+/* MY CODE STARTS*/
+
+
+body {
+  background-color:  #fff;
+}
+
+header {
+  background-color:  #fff;
+  text-align: center;
+}
+
+header nav {
+  width: 100%;
+  height: 100px;
+  background-color:  #fff;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+header nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: black;
+  padding: 10px 20px;
+  line-height: 2;
+} 
+
+ul li a:hover{
+  color: rgb(45, 45, 143);
+}
+
+.title{
+  text-align: center;
+  padding: 20px;
+  color: black;
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+}
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color:  #fff; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: black;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 16px;
+    cursor: pointer;
+    background-color:  #fff;
+    color: black;
+    padding: 10px;
+    border: none;
+}
+  
+  .openbtn:hover {
+    background-color: #444;
+ }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #header {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  background-position: center;
+  background-size: cover; /* or contain depending on what you want */
+  height: 520px;
+  background-repeat:no-repeat;
+  background-image: url(img/logo.png);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.imgslideshow {
+    height: 520px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 
+  background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+.for_slick_slider {
+  display: none;
+}
+
+.for_slick_slider .multiple-items {
+  width: 350px;
+  height: 250px;
+  margin: 50px;
+  display: none;
+}
+
+.for_slick_slider .items img{
+  width: 350px;
+  height: 250px;
+  display: none;
+  object-fit: cover;
+}
+
+/*STND PARA CONTAINER */
+.paras {
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  color: black;
+}
+
+
+.paraheader {
+  font-size: 20px;
+  font-family: 'Barlow', sans-serif;
+  color: black;
+}
+
+.footerparas {
+  font-size: 16px;
+  font-family: 'Barlow', sans-serif;
+  color: #1094ec;
+}
+
+.paracontainer{
+  border-style: none;
+  border-color: #111;
+  height: 50%;
+  width: 100%;
+  border-width: 2px;
+  text-align: center;
+  padding: 10px;
+  line-height: 35px;
+}
+
+/*IMG PARA CONTAINER */
+
+.paracontainerimg{
+  border-style: none;
+  height: 500px;
+  width: 100%;
+  border-width: 4px;
+  text-align: center;
+  padding: 20px;
+  line-height: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.backgroundimgcontainer {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  background-image: url(img/sunsetviewbeach.png.jpg);
+  background-position: center;
+  background-size: cover; /* or contain depending on what you want */
+  background-repeat:no-repeat;
+}
+
+.backgroundimgcontainerparabox {
+  border-color: #111;
+  border-style: groove;
+  border-width: 2px;
+  background-color: #fff;
+  opacity: 0.7;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.backgroundimgcontainer .paras{
+  font-size: 16px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: black;
+}
+
+
+/*TICK CONTAINER */
+
+.tickcontainer {
+  border-style: dotted;
+  border-color: #fff;
+  height: 50%;
+  width: 100%;
+  border-width: 2px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 10%;
+  margin-bottom: 20px;
+}
+
+.tickparas {
+  font-size: 18px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: black;
+  text-align: center;
+}
+
+.material-icon-check {
+  color: green; 
+  float: right;
+}
+
+.imgparas{
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.activityparacontainer{
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  border-width: 4px;
+  text-align: center;
+  padding: 20px;
+  line-height: 40px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.activityimgparas{
+  width: 50%;
+  height: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.mapouter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+/* Facebook */
+.fa-facebook {
+  background: #111;
+  color: white;
+}
+
+/* Twitter */
+.fa-tripadvisor {
+  background: #111;
+  color: white;
+}
+
+.fa-instagram {
+  background: #111;
+  color: white;
+}
+
+.navbar-inverse {
+  height: 20%;
+}
+
+@media only screen and (min-width: 768px){
+  .wrapper {
+  width: 600px;
+  margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-width: 1000px){
+
+  .for_slick_slider {
+    display: flex;
+  }
+  
+  .for_slick_slider .items {
+    width: 900px;
+    height: 500px;
+    display: flex;
+  }
+  
+  .for_slick_slider .items img{
+    width: 900px;
+    height: 500px;
+    display: flex;
+    transition: all linear .4s;
+  }
+  
+  .for_slick_slider .slick-center img {
+    transform: scale(1.1);
+  }
+  
+  body {
+    background-color: #fff;
+  }
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    color: black;
+    padding: 10px 20px;
+    line-height: 2;
+  } 
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .dot {
+    display:none;
+  }
+
+  .title{
+  text-align: center;
+  padding: 20px;
+  color: black;
+  font-size: 24px;
+  font-family: 'Barlow', sans-serif;
+  }
+
+  .openbtn {
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+  padding: 10px;
+  border: none;
+}
+
+.tickcontainer {
+  border-style: dotted;
+  border-color:  #fff;
+  height: 100%;
+  width: 100%;
+  border-width: 2px;
+  display: inline-flex;
+  align-items: center;
+  padding-left: 35%;
+  margin-bottom: 20px;
+}
+
+.tickparas {
+  font-size: 20px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: black;
+  text-align: center;
+
+}
+
+.material-icon-check {
+  color: green; 
+  float: right;
+}
+
+
+.paras {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color:  black;
+}
+
+.paraheader {
+  font-size: 22px;
+  font-family: 'Barlow', sans-serif;
+  color: black;
+}
+
+.footerparas {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+  color: #1094ec;
+}
+
+.sectioncontainer{
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  border-width: 4px;
+  text-align: center;
+  padding: 20px;
+  line-height: 40px;
+  display: inline-flex;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.paracontainer{
+  border-style: none;
+  height: 50%;
+  width: 50%;
+  border-width: 4px;
+  text-align: center;
+  padding: 40px;
+  line-height: 40px;
+  display: block;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.imgparas{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 10px;
+}
+
+.backgroundimgcontainer .paras{
+  font-size: 20px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color: black;
+}
+
+.activityparacontainer{
+  border-style: none;
+  height: 100%;
+  width: 100%;
+  border-width: 4px;
+  text-align: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  line-height: 40px;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.activityimgparas{
+  width: 25%;
+  height: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+
+}
